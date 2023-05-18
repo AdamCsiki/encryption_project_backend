@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href={{ url_for('static', filename='styles/index.css') }}/>
+    <script type="application/javascript" src={{ url_for('static', filename='js/index.js') }}></script>
+{% endblock %}
+
+{% block main %}
+    <div class="index">
+        <div class="input-container">
+            <div class="outer-container">
+                <textarea class="message-textarea" placeholder="message" name="message">{{ message }}</textarea>
+                <input type="file"/>
+            </div>
+
+            <div class="center-input-container">
+                <select name="encryption_type">
+                    <option disabled selected>Algorithm</option>
+                    <option>First</option>
+                    <option>Second</option>
+                </select>
+                <button>Encrypt</button>
+            </div>
+
+            <div class="outer-container">
+                <textarea class="message-textarea" placeholder="encrypted_message">{{ encrypted_message }}</textarea>
+                <input type="file"/>
+            </div>
+        </div>
+    </div>
+{% endblock %}

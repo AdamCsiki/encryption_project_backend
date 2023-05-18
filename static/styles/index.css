@@ -1,0 +1,42 @@
+.index {
+    flex-grow: 1;
+
+    padding: 2rem 2rem 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+.center-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.message-textarea {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+}
